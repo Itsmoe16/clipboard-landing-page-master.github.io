@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&display=swap');
+/* google fonts */
+/* Css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root {
+    --main-heading-color:  hsl(210, 10%, 33%);
+    --main-p-color: hsl(201, 11%, 66%);
+}
+p {
+    color: var(--main-p-color);
+}
+/* End css reset */
+/* Start header  */
+header {
+    background-image: url(/images/bg-header-desktop.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    padding: 70px 70px;
+    position: relative;
+}
+header img {
+  padding-bottom: 3rem;
+}
+
+header .info {
+    text-align: center;
+}
+header .info h3 {
+    color: var(--main-heading-color);
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+header .info p {
+    color: var(--main-p-color);
+    font-size: 1.25rem;
+    max-width: 750px;
+    padding: 20px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.btns {
+    padding: 40px;
+}
+.btns .btn-1 {
+    background-color: hsl(171, 66%, 44%);
+    padding: 13px;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.btns .btn-2 {
+    padding: 13px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .btns {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    text-align: center;
+    }
+}
+/* End header */
+/* Mac list */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    text-align: center;
+}
+.container h2 {
+    color: var(--main-heading-color);
+    font-weight: 600;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container .text .clipboard {
+    color: var(--main-p-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+    padding: 20px;
+}
+.container .img img {
+    max-width: 100%;
+}
+.container .img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 10em;
+    margin-top: 2em;
+}
+.container .img ul {
+margin: 10px
+}
+.container .img ul li {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: var(--main-heading-color);
+    font-weight: 600;
+    font-size: 30px;
+
+}
+.container .img ul p{
+    color: var(--main-p-color);
+    font-size: 25px;
+    line-height: 1.3;
+    max-width: 20em;
+
+    
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container .img {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        left: -65px;
+        align-items: center; 
+        margin-top: 5rem;
+    }
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container .img ul li{
+        font-size: 2.5rem;
+    }
+    
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container .img img {
+        width: 300px;
+    }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container .img  p {
+        font-size: 200px;
+    }
+
+} 
+ 
+
+@media (max-width: 768px)  {
+    .container .img  {
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: -65px;
+
+}
+@media (max-width: 768px)  {
+    .container .img img {
+        width: 35em;
+    }
+}
+@media (max-width: 768px)  {
+    .container .img ul li  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+}
+/* End of mac list */
+/* Tablet section */
+.tablet-sec {
+    margin-top: 10rem;
+}
+.tablet-sec img {
+    max-width: 100%;
+}
+.tablet-sec p {
+    color: var(--main-p-color);
+    font-size: 17px;
+    max-width: 659px;
+    margin: 0 auto;
+    padding-bottom: 76px;
+}
+/* end tablet section */
+/* Supercharge your work flow section */
+.boxes {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 80px;
+}
+.boxes .box img {
+    width: 30px;
+    margin: 0 auto;
+}
+.boxes .box h3 {
+    color: var(--main-heading-color);
+    font-size: 26px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.boxes .box p {
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+@media (max-width: 768px)  {
+    .boxes  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .boxes  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box img {
+        width: 90px;
+    }
+    .boxes .box p {
+        font-size: 15px;
+    }
+}
+
+
+/* End supercharge your flow section */
+/* logos */
+.photos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 11em;
+}
+
+@media (max-width: 768px)  {
+    .photos  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 7em;
+    }
+    .photos img {
+        padding: 40px;
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .photos  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 7em;
+    }
+    .photos img {
+        padding: 40px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    
+}
+
+/* End logos */
+/* another clipboard */
+    .clipboard2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 70px 70px;
+        position: relative;
+    }
+    .clipboard2 h2 {
+        color: var(--main-heading-color);
+        font-weight: 600;
+        font-size: 2em;
+        margin-top: 5em;
+        margin-bottom: 20px;
+    
+    }
+    .clipboard2 p {
+        max-width: 600px;
+        line-height: 1.8;
+    }
+
+    .clipboard2 .btns a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        }
+
+        @media (max-width: 768px)  {
+            .btns  {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .btns {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    text-align: center;
+    }
+}
+/* end second clipboard */
+/* footer */
+footer {
+    padding: 45px;
+    background-color:#f3f3f3;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
+}
+footer .logo {
+    max-width: 70px;
+}
+.links {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 120px));
+    gap:20px 70px;
+}
+.social{
+    place-self: center;
+  }
+
+  .social a:not(:last-child) {
+    margin-right: 35px;
+  }
+footer a {
+    text-decoration: none;
+    color: var(--main-heading-color);
+    font-weight: 700;
+} 
+
+@media (max-width: 768px)  {
+    footer  {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px 0;
+        text-align: center;
+    }
+    footer .links {
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 30px 40px;
+    }
+    .social {
+        place-self: center;
+    }
+    .social a:not(:last-child) {
+        margin-right: 35px;
+      }
+    
+}
+
+
+/* footer end */
